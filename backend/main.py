@@ -36,8 +36,8 @@ def process_images(directory):
     return np.array(images), np.array(labels)
 
 # Load and process dataset
-train_images, train_labels = process_images("assets/train")
-val_images, val_labels = process_images("assets/validate")
+train_images, train_labels = process_images("../assets/train")
+val_images, val_labels = process_images("../assets/validate")
 
 # Label encoding
 encoder = preprocessing.LabelEncoder()
